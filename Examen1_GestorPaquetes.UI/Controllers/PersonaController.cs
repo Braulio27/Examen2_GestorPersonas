@@ -32,7 +32,7 @@ namespace Examen1_GestorPaquetes.UI.Controllers
 
 
         // GET: PersonaController/Create
-        public ActionResult Crear2()
+        public ActionResult Crear()
         {
             return View();
         }
@@ -40,7 +40,7 @@ namespace Examen1_GestorPaquetes.UI.Controllers
         // POST: PersonaController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Crear2(PersonaConFoto persona)
+        public ActionResult Crear(PersonaConFoto persona)
         {
             try
             {

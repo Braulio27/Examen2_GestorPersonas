@@ -7,12 +7,10 @@ namespace Examen1_GestorPaquetes.Model
 {
     public class Persona
     {
-        
-        public int Id { get; set; }
-
         [Required(ErrorMessage = "La identificación es requerida")]
         [Display(Name = "Identificación")]
-        public string Identificacion { get; set; }
+        [Key]
+        public int Identificacion { get; set; }
 
         [Required(ErrorMessage = "El Nombre es requerido")]
         [Display(Name = "Nombre")]
@@ -25,6 +23,8 @@ namespace Examen1_GestorPaquetes.Model
         [Required(ErrorMessage = "El Segundo Apellido es requerido")]
         [Display(Name = "Segundo Apellido")]
         public string SegundoApellido { get; set; }
-        public byte[]? Foto { get; set; }
+
+        [Required(ErrorMessage = "La imagen es requerida")]
+        public byte[] Foto { get; set; }
     }
 }

@@ -29,7 +29,7 @@ namespace Examen1_GestorPaquetes.BL
         public void AgregarPersona(PersonaConFoto personaFoto)
         {
             Persona persona = new Persona();
-            persona.Identificacion = personaFoto.Identificacion;
+            persona.Identificacion = int.Parse(personaFoto.Identificacion);
             persona.Nombre = personaFoto.Nombre;
             persona.PrimerApellido = personaFoto.PrimerApellido;
             persona.SegundoApellido = personaFoto.SegundoApellido;
